@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+     <div class="page-header">
+        <img src="assets/logo/wsa-logo.svg" alt="wsalogo"/>
+        <h1 class="project-title">Image Carousel</h1>
+     </div>
+
+     <!-- Carousel section -->
+      <section class="carousel-wrapper">
+        <div class="carousel-slides-container">
+
+            <!-- prev btn -->
+             <button class="prev-btn" onclick="changeSlide(-1)">
+                <img src="assets/icons/arrow-prev.svg"/>
+             </button>
+
+             <!-- slides -->
+              <img src="assets/images/slide1.png" alt="slide1" class="carousel-slide"/>
+              <img src="assets/images/slide2.png" alt="slide1" class="carousel-slide"/>
+              <img src="assets/images/slide3.png" alt="slide1" class="carousel-slide"/>
+
+              <!-- next btn -->
+               <button class="next-btn" onclick="changeSlide(1)" >
+                 <img src="assets/icons/arrow-next.svg" alt="next"/>
+               </button>
+        </div>
+
+        <!-- dot navigation -->
+         <div class="carousel-dots">
+           <span class="dot" onclick="currentSlide(0)"></span>
+           <span class="dot" onclick="currentSlide(1)"></span>
+           <span class="dot" onclick="currentSlide(2)"></span>
+         </div>
+      </section>
+
+      <footer>
+        <p class="copyright-text">&copy; 2026 WSA. All Rights Reserved</p>
+      </footer>
+
+       <script src="script.js"></script>
+
+</body>
+</html>
